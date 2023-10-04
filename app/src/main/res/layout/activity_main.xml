@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonAddToCart"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="add to cart"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:id="@+id/buttonCashOnDelivery"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Cash on delivery"
+        android:layout_below="@id/buttonAddToCart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/buttonOnlineTransfer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Online transfer"
+        android:layout_below="@id/buttonCashOnDelivery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
